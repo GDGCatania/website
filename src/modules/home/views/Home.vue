@@ -1,17 +1,18 @@
 <template>
   <div>
-    <div class="p-8 flex content-center">
-      <h1 class="text-center">
-        Hey there, hello GDG!
-      </h1>
-    </div>
+    <Hero></Hero>
   </div>
 </template>
 
 <script lang="ts">
   import { Vue, Component } from 'vue-property-decorator';
+  import Hero from '@/modules/home/components/Hero.vue';
 
-  @Component
+  @Component({
+    components: {
+      Hero,
+    },
+  })
   export default class Home extends Vue {
 
   }
